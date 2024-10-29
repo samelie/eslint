@@ -1,0 +1,34 @@
+{
+    "name": "@rad/eslint",
+    "version": "0.0.0",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/eslint.config.d.ts",
+            "import": "./dist/eslint.config.mjs",
+            "require": "./dist/eslint.config.cjs"
+        }
+    },
+    "main": "./dist/eslint.config.mjs",
+    "module": "./dist/eslint.config.mjs",
+    "types": "./dist/eslint.config.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "unbuild",
+        "lint": "eslint .",
+        "lint-fix": "eslint --fix ."
+    },
+    "devDependencies": {
+        "@antfu/eslint-config": "^3.8.0",
+        "@rad/eslint-plugin-rules": "workspace:*",
+        "@types/node": "^22.8.2",
+        "eslint": "^9.13.0",
+        "eslint-plugin-format": "^0.1.2",
+        "eslint-plugin-no-barrel-files": "^1.1.1",
+        "package-json-type": "^1.0.3",
+        "package-up": "^5.0.0",
+        "unbuild": "^2.0.0"
+    }
+}
