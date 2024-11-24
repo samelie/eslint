@@ -15,10 +15,11 @@ export default defineBuildConfig({
     entries: ["src/eslint.config"],
     outDir: "dist",
     failOnWarn: false,
-    declaration: true,
+    // Currently there is an issue with one of the eslint plugins & Typescript
+    declaration: false,
     clean: true,
     rollup: {
         emitCJS: true,
     },
-    externals: ["eslint-flat-config-utils", ...Object.keys(pkgJson.devDependencies || [])],
+    externals: [ ...Object.keys(pkgJson.devDependencies || [])],
 });
