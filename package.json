@@ -23,7 +23,6 @@
     "devDependencies": {
         "@antfu/eslint-config": "^3.11.2",
         "@rad/eslint-plugin-rules": "workspace:*",
-        "@rad/global-type-defs": "workspace:*",
         "@types/node": "^22.10.1",
         "eslint": "^9.16.0",
         "eslint-flat-config-utils": "^0.4.0",
