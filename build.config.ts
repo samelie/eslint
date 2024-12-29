@@ -1,9 +1,10 @@
-import { parse } from "node:path";
+import { makeConfig } from "@rad/publish/build.config.ts";
 import { readFileSync } from "node:fs";
-import { defineBuildConfig } from "unbuild";
+import { parse } from "node:path";
 import type { IPackageJson } from "package-json-type";
-
 import { packageUpSync } from "package-up";
+
+
 
 const path = require.resolve("@antfu/eslint-config");
 const p = packageUpSync({
@@ -11,15 +12,14 @@ const p = packageUpSync({
 });
 const pkgJson = JSON.parse(readFileSync(p || "", "utf-8")) as IPackageJson;
 
-export default defineBuildConfig({
+
+export default makeConfig({
     entries: ["src/eslint.config"],
-    outDir: "dist",
-    failOnWarn: false,
     // Currently there is an issue with one of the eslint plugins & Typescript
     declaration: false,
-    clean: true,
     rollup: {
-        emitCJS: true,
+        emitCJS:true
     },
-    externals: [ ...Object.keys(pkgJson.devDependencies || [])],
+    externals: [...Object.keys(pkgJson.devDependencies || [])],
 });
+
