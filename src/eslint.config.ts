@@ -26,7 +26,7 @@ import eslintPluginDeprecate from "eslint-plugin-deprecate";
 
 export const ignores = ["**/build/**", "**/dist/**", "README.md", "package.json", "**/dev-dist/**", "**.js", "**.vscode/.settings.json"];
 
-export default function make(...args: Parameters<typeof antfu>) {
+export default function (...args: Parameters<typeof antfu>): ReturnType<typeof antfu> {
     return antfu(
         {
             stylistic: {

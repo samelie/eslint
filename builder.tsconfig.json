@@ -7,13 +7,13 @@
             "DOM"
         ],
         "moduleResolution": "bundler",
-        "outDir": "dist",
+        "outDir": "./dist",
         "esModuleInterop": true,
         "strict": true,
         "skipLibCheck": true,
         "jsx": "preserve",
         "declaration": true,
-        "declarationDir": "dist/types",
+        "declarationDir": "./dist/types",
         "resolveJsonModule": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
@@ -43,6 +43,7 @@
     "exclude": [
         "dist",
         "node_modules",
-        "**/*.spec.ts"
+        "**/*.spec.ts",
+        "dist/types"
     ]
 }
