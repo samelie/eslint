@@ -18,7 +18,8 @@
     "scripts": {
         "build": "unbuild",
         "lint": "eslint .",
-        "lint:fix": "eslint --fix ."
+        "lint:fix": "eslint --fix .",
+"types": "tsc -p tsconfig.typecheck.json"
     },
     "devDependencies": {
         "@antfu/eslint-config": "^3.12.1",
