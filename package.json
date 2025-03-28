@@ -22,16 +22,16 @@
         "types": "tsc -p tsconfig.typecheck.json"
     },
     "devDependencies": {
-        "@antfu/eslint-config": "^4.3.0",
+        "@antfu/eslint-config": "^4.11.0",
         "@rad/eslint-plugin-rules": "workspace:*",
         "@rad/publish": "workspace:*",
-        "@types/node": "^22.13.4",
-        "eslint": "^9.20.1",
+        "@types/node": "^22.13.14",
+        "eslint": "^9.23.0",
         "eslint-flat-config-utils": "^2.0.1",
         "eslint-plugin-format": "^1.0.1",
         "eslint-plugin-no-barrel-files": "^1.2.1",
         "package-json-type": "^1.0.3",
         "package-up": "^5.0.0",
-        "unbuild": "^3.3.1"
+        "unbuild": "^3.5.0"
     }
 }
