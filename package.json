@@ -33,6 +33,7 @@
     "package-json-type": "^1.0.3",
     "package-up": "^5.0.0",
     "unbuild": "^3.5.0",
-    "@rad/eslint": "workspace:*"
+    "@rad/eslint": "workspace:*",
+    "typescript": "^5.8.3"
   }
 }
