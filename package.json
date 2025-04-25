@@ -1,37 +1,38 @@
 {
-    "name": "@rad/eslint",
-    "version": "0.0.0",
-    "type": "module",
-    "exports": {
-        ".": {
-            "types": "./dist/eslint.config.d.ts",
-            "import": "./dist/eslint.config.mjs",
-            "require": "./dist/eslint.config.cjs"
-        }
-    },
-    "main": "./dist/eslint.config.mjs",
-    "module": "./dist/eslint.config.mjs",
-    "types": "./dist/eslint.config.d.ts",
-    "files": [
-        "dist"
-    ],
-    "scripts": {
-        "build": "unbuild",
-        "lint": "eslint .",
-        "lint:fix": "eslint --fix .",
-        "types": "tsc -p tsconfig.typecheck.json"
-    },
-    "devDependencies": {
-        "@antfu/eslint-config": "^4.12.0",
-        "@rad/eslint-plugin-rules": "workspace:*",
-        "@rad/publish": "workspace:*",
-        "@types/node": "^22.14.1",
-        "eslint": "^9.25.1",
-        "eslint-flat-config-utils": "^2.0.1",
-        "eslint-plugin-format": "^1.0.1",
-        "eslint-plugin-no-barrel-files": "^1.2.1",
-        "package-json-type": "^1.0.3",
-        "package-up": "^5.0.0",
-        "unbuild": "^3.5.0"
+  "name": "@rad/eslint",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/eslint.config.d.ts",
+      "import": "./dist/eslint.config.mjs",
+      "require": "./dist/eslint.config.cjs"
     }
+  },
+  "main": "./dist/eslint.config.mjs",
+  "module": "./dist/eslint.config.mjs",
+  "types": "./dist/eslint.config.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "types": "tsc -p tsconfig.typecheck.json"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.12.0",
+    "@rad/eslint-plugin-rules": "workspace:*",
+    "@rad/publish": "workspace:*",
+    "@types/node": "^22.15.0",
+    "eslint": "^9.25.1",
+    "eslint-flat-config-utils": "^2.0.1",
+    "eslint-plugin-format": "^1.0.1",
+    "eslint-plugin-no-barrel-files": "^1.2.1",
+    "package-json-type": "^1.0.3",
+    "package-up": "^5.0.0",
+    "unbuild": "^3.5.0",
+    "@rad/eslint": "workspace:*"
+  }
 }
