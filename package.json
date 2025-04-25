@@ -23,17 +23,17 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.12.0",
+    "@rad/eslint": "workspace:*",
     "@rad/eslint-plugin-rules": "workspace:*",
     "@rad/publish": "workspace:*",
-    "@types/node": "^22.15.0",
+    "@types/node": "^22.15.2",
     "eslint": "^9.25.1",
     "eslint-flat-config-utils": "^2.0.1",
     "eslint-plugin-format": "^1.0.1",
     "eslint-plugin-no-barrel-files": "^1.2.1",
     "package-json-type": "^1.0.3",
     "package-up": "^5.0.0",
-    "unbuild": "^3.5.0",
-    "@rad/eslint": "workspace:*",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "unbuild": "^3.5.0"
   }
 }
