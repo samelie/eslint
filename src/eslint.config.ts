@@ -24,7 +24,7 @@ import eslintPluginDeprecate from "eslint-plugin-deprecate";
 
 */
 
-export const ignores = ["**/build/**", "**/dist/**", "README.md", "package.json", "**/dev-dist/**", "**.js", "**.vscode/.settings.json"];
+export const ignores = ["**/build/**", "**/dist/**", "README.md", "package.json", "**/dev-dist/**", "**.js", "**.vscode/.settings.json", "**/node_modules/**", "*.html"];
 
 export default function (...args: Parameters<typeof antfu>): ReturnType<typeof antfu> {
     return antfu(
@@ -34,7 +34,7 @@ export default function (...args: Parameters<typeof antfu>): ReturnType<typeof a
                 quotes: "double",
                 semi: true,
             },
-            formatters: true,
+            formatters: { css: true, xml: true },
             react: false,
             jsx: false,
             markdown: false,
