@@ -34,7 +34,7 @@ export default function (...args: Parameters<typeof antfu>): ReturnType<typeof a
                 quotes: "double",
                 semi: true,
             },
-            formatters: { css: true, xml: true },
+            formatters: { css: true, xml: false },
             react: false,
             jsx: false,
             markdown: false,
