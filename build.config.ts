@@ -1,7 +1,7 @@
 import type { IPackageJson } from "package-json-type";
 import { readFileSync } from "node:fs";
 import { parse } from "node:path";
-import { makeConfig } from "@rad/publish/build.config.ts";
+import { makeConfig } from "@rad/publish/src/build.config";
 import { packageUpSync } from "package-up";
 
 const path = require.resolve("@antfu/eslint-config");
