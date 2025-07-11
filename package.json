@@ -26,7 +26,7 @@
     "@rad/eslint": "workspace:*",
     "@rad/eslint-plugin-rules": "workspace:*",
     "@rad/publish": "workspace:*",
-    "@types/node": "^24.0.12",
+    "@types/node": "^24.0.13",
     "eslint": "^9.30.1",
     "eslint-flat-config-utils": "^2.1.0",
     "eslint-plugin-format": "^1.0.1",
