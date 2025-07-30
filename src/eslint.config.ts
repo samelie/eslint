@@ -108,6 +108,8 @@ export default function (...args: Parameters<typeof antfu>): ReturnType<typeof a
     // see https://github.com/antfu/eslint-config/blob/93c9e772faf45295a4deb2633a4655954da74491/src/configs/typescript.ts#L110
         .override("antfu/typescript/rules", {
             rules: {
+                "ts/no-use-before-define": "off",
+                "ts/no-unsafe-declaration-merging": "off",
                 "no-redeclare": "off",
                 "ts/no-redeclare": "off",
                 "ts/no-explicit-any": "error",
