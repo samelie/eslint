@@ -40,7 +40,7 @@ export default function (...args: Parameters<typeof antfu>): ReturnType<typeof a
             markdown: false,
             // TypeScript and Vue are auto-detected, you can also explicitly enable them:
             typescript: true,
-            ignores,
+            ignores: [...ignores, ...(args.ignores || [])],
             // Disable jsonc and yaml support
             jsonc: false,
             yaml: false,
