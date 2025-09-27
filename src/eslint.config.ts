@@ -26,7 +26,7 @@ import eslintPluginDeprecate from "eslint-plugin-deprecate";
 
 export const ignores = ["**/build/**", "**/dist/**", "README.md", "package.json", "**/dev-dist/**", "**.js", "**.vscode/.settings.json", "**/node_modules/**", "*.html"];
 
-export default function (...args: Parameters<typeof antfu>): ReturnType<typeof antfu> {
+export default function (options?: Parameters<typeof antfu>[0] & { ignores?: string[] }, ...userConfigs: Parameters<typeof antfu>[1][]): ReturnType<typeof antfu> {
     return antfu(
         {
             stylistic: {
@@ -40,12 +40,12 @@ export default function (...args: Parameters<typeof antfu>): ReturnType<typeof a
             markdown: false,
             // TypeScript and Vue are auto-detected, you can also explicitly enable them:
             typescript: true,
-            ignores: [...ignores, ...(args.ignores || [])],
+            ignores: [...ignores, ...(options?.ignores || [])],
             // Disable jsonc and yaml support
             jsonc: false,
             yaml: false,
             vue: false,
-            ...args,
+            ...options,
         },
         {
             files: ["**/*.ts"],
@@ -81,6 +81,7 @@ export default function (...args: Parameters<typeof antfu>): ReturnType<typeof a
                 ],
             },
         },
+        ...userConfigs,
     )
         .override("antfu/unicorn/rules", {
             rules: {
