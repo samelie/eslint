@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.4.1",
+    "@rad/config": "workspace:*",
     "@rad/eslint": "workspace:*",
     "@rad/eslint-plugin-rules": "workspace:*",
     "@rad/publish": "workspace:*",
@@ -35,7 +36,6 @@
     "package-json-type": "^1.0.3",
     "package-up": "^5.0.0",
     "typescript": "^5.9.2",
-    "unbuild": "^3.6.1",
-    "@rad/config": "workspace:*"
+    "unbuild": "^3.6.1"
   }
 }
