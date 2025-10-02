@@ -28,14 +28,14 @@
     "@rad/eslint": "workspace:*",
     "@rad/eslint-plugin-rules": "workspace:*",
     "@rad/publish": "workspace:*",
-    "@types/node": "^24.5.2",
+    "@types/node": "^24.6.2",
     "eslint": "^9.36.0",
     "eslint-flat-config-utils": "^2.1.4",
     "eslint-plugin-format": "^1.0.2",
     "eslint-plugin-no-barrel-files": "^1.2.2",
     "package-json-type": "^1.0.3",
     "package-up": "^5.0.0",
-    "typescript": "^5.9.2",
+    "typescript": "^5.9.3",
     "unbuild": "^3.6.1"
   }
 }
