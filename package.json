@@ -29,7 +29,7 @@
     "@rad/eslint-plugin-rules": "workspace:*",
     "@rad/publish": "workspace:*",
     "@types/node": "^24.6.2",
-    "eslint": "^9.36.0",
+    "eslint": "^9.37.0",
     "eslint-flat-config-utils": "^2.1.4",
     "eslint-plugin-format": "^1.0.2",
     "eslint-plugin-no-barrel-files": "^1.2.2",
