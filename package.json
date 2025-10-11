@@ -23,8 +23,8 @@
     "knip": "knip"
   },
   "devDependencies": {
+    "@adddog/build-configs": "workspace:*",
     "@antfu/eslint-config": "^5.4.1",
-    "@rad/build-configs": "workspace:*",
     "@rad/config": "workspace:*",
     "@rad/eslint": "workspace:*",
     "@rad/eslint-plugin-rules": "workspace:*",
