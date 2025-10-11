@@ -24,10 +24,10 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.4.1",
+    "@rad/build-configs": "workspace:*",
     "@rad/config": "workspace:*",
     "@rad/eslint": "workspace:*",
     "@rad/eslint-plugin-rules": "workspace:*",
-    "@rad/build-configs": "workspace:*",
     "@types/node": "^24.7.2",
     "eslint": "^9.37.0",
     "eslint-flat-config-utils": "^2.1.4",
@@ -37,5 +37,11 @@
     "package-up": "^5.0.0",
     "typescript": "^5.9.3",
     "unbuild": "^3.6.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">= 22",
+    "pnpm": ">= 10",
+    "npm": ">= 11"
   }
 }
