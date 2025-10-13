@@ -1,7 +1,7 @@
 import type { IPackageJson } from "package-json-type";
 import { readFileSync } from "node:fs";
 import { parse } from "node:path";
-import { makeConfig } from "@adddog/build-configs/unbuild";
+import { makeUnbuildConfig } from "@adddog/build-configs/unbuild";
 import { packageUpSync } from "package-up";
 
 const path = require.resolve("@antfu/eslint-config");
