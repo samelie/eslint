@@ -28,6 +28,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "types": "tsc -p tsconfig.typecheck.json",
+    "release": "bumpp",
     "prepublishOnly": "pnpm run lint && pnpm run types && pnpm run build",
     "prepack": "pnpm run prepublishOnly",
     "knip": "knip"
@@ -37,6 +38,7 @@
     "@adddog/eslint-plugin-rules": "workspace:*",
     "@antfu/eslint-config": "^5.4.1",
     "@types/node": "^24.7.2",
+    "bumpp": "^10.3.1",
     "eslint": "^9.37.0",
     "eslint-flat-config-utils": "^2.1.4",
     "eslint-plugin-format": "^1.0.2",
