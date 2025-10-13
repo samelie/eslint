@@ -33,16 +33,18 @@
     "prepack": "pnpm run prepublishOnly",
     "knip": "knip"
   },
+  "dependencies": {
+    "@adddog/eslint-plugin-rules": "^0.0.8",
+    "eslint-plugin-no-barrel-files": "^1.2.2",
+    "@antfu/eslint-config": "^5.4.1"
+  },
   "devDependencies": {
     "@adddog/build-configs": "^0.0.1",
-    "@adddog/eslint-plugin-rules": "^0.0.8",
-    "@antfu/eslint-config": "^5.4.1",
     "@types/node": "^24.7.2",
     "bumpp": "^10.3.1",
     "eslint": "^9.37.0",
     "eslint-flat-config-utils": "^2.1.4",
     "eslint-plugin-format": "^1.0.2",
-    "eslint-plugin-no-barrel-files": "^1.2.2",
     "package-json-type": "^1.0.3",
     "package-up": "^5.0.0",
     "typescript": "^5.9.3",
@@ -52,7 +54,6 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "private": false,
   "engines": {
     "node": ">= 22",
     "pnpm": ">= 10",
