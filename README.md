@@ -2,7 +2,7 @@
 
 > Shared ESLint configuration for the monorepo, built on [@antfu/eslint-config](https://github.com/antfu/eslint-config)
 
-## Overview
+![Overview](https://raw.githubusercontent.com/samradical/readme-images/refs/heads/main/overview-fs8.png)
 
 This package provides a TypeScript-focused ESLint configuration that emphasizes:
 
@@ -13,7 +13,47 @@ This package provides a TypeScript-focused ESLint configuration that emphasizes:
 
 ## Installation
 
-This package is internal to the monorepo and installed via workspace protocol:
+### From npm
+
+```bash
+npm install --save-dev @adddog/eslint
+# or
+pnpm add -D @adddog/eslint
+# or
+yarn add -D @adddog/eslint
+```
+
+Then add to your `package.json`:
+
+```json
+{
+  "devDependencies": {
+    "@adddog/eslint": "^0.0.1"
+  }
+}
+```
+
+### From GitHub
+
+Install directly from the GitHub repository:
+
+```bash
+npm install --save-dev github:samelie/eslint
+# or
+pnpm add -D github:samelie/eslint
+# or
+yarn add -D github:samelie/eslint
+```
+
+Or specify a specific tag/commit:
+
+```bash
+npm install --save-dev github:samelie/eslint#v0.0.1
+```
+
+### In Monorepo (Workspace)
+
+For internal monorepo use with workspace protocol:
 
 ```json
 {
@@ -21,6 +61,23 @@ This package is internal to the monorepo and installed via workspace protocol:
     "@adddog/eslint": "workspace:*"
   }
 }
+```
+
+### Peer Dependencies
+
+This package requires the following peer dependencies:
+
+```json
+{
+  "eslint": "^9.37.0",
+  "typescript": "^5.9.3"
+}
+```
+
+Install them if not already present:
+
+```bash
+pnpm add -D eslint typescript
 ```
 
 ## Usage
@@ -242,6 +299,27 @@ After making changes to the config:
    pnpm lint  # From monorepo root
    ```
 
+### Publishing to npm
+
+The package includes `prepublishOnly` hooks that automatically run linting, type-checking, and building before publishing:
+
+1. **Update version in package.json**:
+   ```bash
+   npm version patch  # or minor, major
+   ```
+
+2. **Publish to npm**:
+   ```bash
+   npm publish
+   ```
+
+The `prepublishOnly` script will automatically:
+- Run `pnpm lint` - Ensure code quality
+- Run `pnpm types` - Verify TypeScript types
+- Run `pnpm build` - Build distribution files
+
+If any step fails, the publish will be aborted.
+
 ## Extending the Config
 
 ### Adding New Rules
@@ -295,10 +373,17 @@ This config uses `@stylistic/eslint-plugin` for formatting, which:
 
 ### Can I use this outside the monorepo?
 
-Currently this package is marked `private: true` and designed for internal use. If you want to use it externally:
-1. Remove `"private": true` from package.json
-2. Publish to npm or a private registry
-3. Update workspace dependencies to regular dependencies
+Yes! This package can be installed from npm or directly from GitHub:
+
+```bash
+# From npm (when published)
+pnpm add -D @adddog/eslint
+
+# From GitHub
+pnpm add -D github:samelie/eslint
+```
+
+See the [Installation](#installation) section for more details.
 
 ### How do I disable a rule temporarily?
 
