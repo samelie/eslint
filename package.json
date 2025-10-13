@@ -46,6 +46,10 @@
     "typescript": "^5.9.3",
     "unbuild": "^3.6.1"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "private": true,
   "engines": {
     "node": ">= 22",
