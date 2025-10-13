@@ -34,7 +34,7 @@
     "knip": "knip"
   },
   "devDependencies": {
-    "@adddog/build-configs": "^0.0.2",
+    "@adddog/build-configs": "^0.0.1",
     "@adddog/eslint-plugin-rules": "^0.0.8",
     "@antfu/eslint-config": "^5.4.1",
     "@types/node": "^24.7.2",
