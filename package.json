@@ -1,6 +1,6 @@
 {
   "name": "@adddog/eslint",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "homepage": "https://github.com/samelie/eslint#readme",
   "repository": {
@@ -28,14 +28,14 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "types": "tsc -p tsconfig.typecheck.json",
-    "release": "bumpp",
+    "release": "bumpp --yes --no-push --release patch",
     "prepublishOnly": "pnpm run lint && pnpm run types && pnpm run build",
     "prepack": "pnpm run prepublishOnly",
     "knip": "knip"
   },
   "devDependencies": {
-    "@adddog/build-configs": "workspace:*",
-    "@adddog/eslint-plugin-rules": "workspace:*",
+    "@adddog/build-configs": "^0.0.2",
+    "@adddog/eslint-plugin-rules": "^0.0.8",
     "@antfu/eslint-config": "^5.4.1",
     "@types/node": "^24.7.2",
     "bumpp": "^10.3.1",
@@ -52,7 +52,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "private": true,
+  "private": false,
   "engines": {
     "node": ">= 22",
     "pnpm": ">= 10",
