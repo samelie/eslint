@@ -1,5 +1,5 @@
 import antfu from "@antfu/eslint-config";
-import radPlguins from "@rad/eslint-plugin-rules";
+import radPlguins from "@adddog/eslint-plugin-rules";
 
 import eslintPluginNoBarrelFiles from "eslint-plugin-no-barrel-files";
 /*

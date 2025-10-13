@@ -1,4 +1,3 @@
-// eslint-disable-next-line antfu/no-import-dist
-import config from "@rad/eslint";
+import config from "./src/eslint.config";
 
 export default config();
