@@ -40,8 +40,8 @@
   },
   "devDependencies": {
     "@adddog/build-configs": "^0.0.1",
-    "@eslint/js": "^9.37.0",
-    "@types/node": "^24.7.2",
+    "eslint": "^9.37.0",
+    "@types/node": "^24.8.0",
     "bumpp": "^10.3.1",
     "eslint-flat-config-utils": "^2.1.4",
     "eslint-plugin-format": "^1.0.2",

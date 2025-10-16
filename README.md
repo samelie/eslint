@@ -69,7 +69,7 @@ This package requires the following peer dependencies:
 
 ```json
 {
-  "@eslint/js": "^9.37.0",
+  "eslint": "^9.37.0",
   "typescript": "^5.9.3"
 }
 ```
