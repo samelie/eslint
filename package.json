@@ -35,11 +35,11 @@
   },
   "dependencies": {
     "@adddog/eslint-plugin-rules": "workspace:*",
-    "@antfu/eslint-config": "^6.0.0",
+    "@antfu/eslint-config": "^6.1.0",
     "eslint-plugin-no-barrel-files": "^1.2.2"
   },
   "devDependencies": {
-    "@types/node": "^24.9.1",
+    "@types/node": "^24.9.2",
     "bumpp": "^10.3.1",
     "eslint": "^9.38.0",
     "eslint-flat-config-utils": "^2.1.4",
