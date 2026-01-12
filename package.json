@@ -39,7 +39,7 @@
     "eslint-plugin-no-barrel-files": "^1.2.2"
   },
   "devDependencies": {
-    "@types/node": "^25.0.3",
+    "@types/node": "^25.0.6",
     "bumpp": "^10.3.2",
     "eslint": "^9.39.2",
     "eslint-flat-config-utils": "^2.1.4",
