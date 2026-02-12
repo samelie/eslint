@@ -5,6 +5,8 @@ import { defineKnipConfig } from "@adddog/monorepo-consistency";
 export default defineKnipConfig({
     entry: ["src/eslint.config.ts"],
     project: ["src/**/*.ts"],
+    // WHY: knip not in devDeps, used in scripts
     ignoreBinaries: ["knip"],
+    // WHY: workspace dep loaded as ESLint plugin, not directly imported
     ignoreDependencies: ["@adddog/eslint-plugin-rules"],
 });
