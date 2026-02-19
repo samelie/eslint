@@ -7,5 +7,10 @@
         "declarationDir": null,
         "emitDeclarationOnly": false,
         "skipLibCheck": true
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "dist",
+        "knip.config.ts"
+    ]
 }
