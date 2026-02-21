@@ -12,14 +12,11 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/eslint.config.d.ts",
-      "import": "./dist/eslint.config.mjs",
-      "require": "./dist/eslint.config.cjs"
+      "import": "./src/eslint.config.ts"
     }
   },
-  "main": "./dist/eslint.config.mjs",
-  "module": "./dist/eslint.config.mjs",
-  "types": "./dist/eslint.config.d.ts",
+  "main": "./src/eslint.config.ts",
+  "types": "./src/eslint.config.ts",
   "files": [
     "dist"
   ],
@@ -51,7 +48,16 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "exports": {
+      ".": {
+        "types": "./dist/eslint.config.d.ts",
+        "import": "./dist/eslint.config.mjs",
+        "require": "./dist/eslint.config.cjs"
+      }
+    },
+    "main": "./dist/eslint.config.mjs",
+    "types": "./dist/eslint.config.d.ts"
   },
   "engines": {
     "node": ">= 22",
