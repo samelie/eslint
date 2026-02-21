@@ -31,7 +31,8 @@
     "release": "bumpp --yes --no-push --no-tag --release patch",
     "prepublishOnly": "pnpm run lint && pnpm run types && pnpm run build",
     "prepack": "pnpm run prepublishOnly",
-    "knip": "knip"
+    "knip": "knip",
+    "version:patch": "npm version patch --no-git-tag-version"
   },
   "dependencies": {
     "@adddog/eslint-plugin-rules": "workspace:*",
