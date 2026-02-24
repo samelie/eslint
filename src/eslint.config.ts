@@ -53,9 +53,19 @@ export default function (options?: Parameters<typeof antfu>[0] & { ignores?: str
                 "no-barrel-files": eslintPluginNoBarrelFiles,
             },
             rules: {
+                "rad/enforce-design-system-rad-imports": "error",
                 "rad/no-as-unknown-as": "error",
                 "rad/no-incorrect-pkg-imports": "error",
                 "no-barrel-files/no-barrel-files": "error",
+            },
+        },
+        {
+            files: ["**/*.vue"],
+            plugins: {
+                "rad": radPlguins,
+            },
+            rules: {
+                "rad/enforce-design-system-rad-imports": "error",
             },
         },
         // ========================================
