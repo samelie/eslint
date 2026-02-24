@@ -17,8 +17,7 @@
       "noImplicitReturns": true,
       "noFallthroughCasesInSwitch": true,
       "verbatimModuleSyntax": true,
-      "forceConsistentCasingInFileNames": true,
-      "allowImportingTsExtensions": true
+      "forceConsistentCasingInFileNames": true
     },
     "paths": {
         "@adddog/eslint-plugin-rules": [
