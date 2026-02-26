@@ -12,11 +12,13 @@
   },
   "exports": {
     ".": {
-      "import": "./src/eslint.config.ts"
+      "types": "./dist/eslint.config.d.ts",
+      "import": "./dist/eslint.config.mjs",
+      "require": "./dist/eslint.config.cjs"
     }
   },
-  "main": "./src/eslint.config.ts",
-  "types": "./src/eslint.config.ts",
+  "main": "./dist/eslint.config.mjs",
+  "types": "./dist/eslint.config.d.ts",
   "files": [
     "dist"
   ],
@@ -26,14 +28,13 @@
     "lint:fix": "eslint --fix .",
     "types": "tsc -p tsconfig.typecheck.json",
     "release": "bumpp --yes --no-push --no-tag --release patch",
-    "prepublishOnly": "pnpm run types && pnpm run build",
-    "prepack": "pnpm run prepublishOnly",
+    "prepare": "unbuild",
     "knip": "knip",
     "version:patch": "npm version patch --no-git-tag-version"
   },
   "dependencies": {
     "@adddog/eslint-plugin-rules": "workspace:*",
-    "@antfu/eslint-config": "^7.4.3",
+    "@antfu/eslint-config": "^7.6.1",
     "eslint-plugin-no-barrel-files": "^1.2.2"
   },
   "devDependencies": {
@@ -41,23 +42,14 @@
     "@types/node": "^25.3.0",
     "bumpp": "^10.4.1",
     "eslint": "^10.0.2",
-    "eslint-plugin-format": "^1.4.0",
+    "eslint-plugin-format": "^2.0.1",
     "package-json-type": "^1.1.2",
     "typescript": "^5.9.3",
     "unbuild": "^3.6.1"
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/",
-    "exports": {
-      ".": {
-        "types": "./dist/eslint.config.d.ts",
-        "import": "./dist/eslint.config.mjs",
-        "require": "./dist/eslint.config.cjs"
-      }
-    },
-    "main": "./dist/eslint.config.mjs",
-    "types": "./dist/eslint.config.d.ts"
+    "registry": "https://registry.npmjs.org/"
   },
   "engines": {
     "node": ">= 22",
