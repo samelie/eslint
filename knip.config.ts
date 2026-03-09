@@ -7,9 +7,20 @@ export default defineKnipConfig({
     project: ["src/**/*.ts"],
 }, {
     "ignoreDependencies": [
-        "@adddog/monorepo-consistency"
+        "@adddog/monorepo-consistency",
+        "eslint",
+        "@adddog/eslint",
+        "@adddog/eslint-plugin-rules"
     ],
     "ignoreBinaries": [
         "knip"
+    ],
+    "entry": [
+        "src/eslint.config.ts",
+        "eslint.config.mjs"
+    ],
+    "project": [
+        "src/**/*.ts",
+        "*.mjs"
     ]
 });
