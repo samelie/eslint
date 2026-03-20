@@ -3,24 +3,13 @@
 import { defineKnipConfig } from "@adddog/monorepo-consistency";
 
 export default defineKnipConfig({
-    entry: ["src/index.ts"],
-    project: ["src/**/*.ts"],
+    project: ["src/**/*.ts", "*.mjs"],
 }, {
     ignoreDependencies: [
         "@adddog/monorepo-consistency",
-        "eslint",
-        "@adddog/eslint",
         "@adddog/eslint-plugin-rules",
     ],
     ignoreBinaries: [
         "knip",
-    ],
-    entry: [
-        "src/eslint.config.ts",
-        "eslint.config.mjs",
-    ],
-    project: [
-        "src/**/*.ts",
-        "*.mjs",
     ],
 });
