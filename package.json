@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@adddog/eslint-plugin-rules": "workspace:*",
-    "@antfu/eslint-config": "^7.7.3",
+    "@antfu/eslint-config": "^8.0.0",
     "eslint-plugin-no-barrel-files": "^1.2.2"
   },
   "devDependencies": {
