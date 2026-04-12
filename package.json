@@ -34,12 +34,12 @@
   },
   "dependencies": {
     "@adddog/eslint-plugin-rules": "workspace:*",
-    "@antfu/eslint-config": "^8.0.0",
+    "@antfu/eslint-config": "^8.1.1",
     "eslint-plugin-no-barrel-files": "^1.2.2"
   },
   "devDependencies": {
     "@adddog/monorepo-consistency": "workspace:*",
-    "@types/node": "^25.5.2",
+    "@types/node": "^25.6.0",
     "bumpp": "^11.0.1",
     "eslint": "^10.2.0",
     "eslint-plugin-format": "^2.0.1",
