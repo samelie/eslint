@@ -41,10 +41,10 @@
     "@adddog/monorepo-consistency": "workspace:*",
     "@types/node": "^25.6.0",
     "bumpp": "^11.0.1",
-    "eslint": "^10.2.0",
+    "eslint": "^10.2.1",
     "eslint-plugin-format": "^2.0.1",
     "package-json-type": "^1.1.2",
-    "typescript": "^6.0.2",
+    "typescript": "^6.0.3",
     "unbuild": "^3.6.1"
   },
   "publishConfig": {
