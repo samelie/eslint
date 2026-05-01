@@ -42,7 +42,7 @@
     "@types/node": "^25.6.0",
     "@typescript/native-preview": "beta",
     "bumpp": "^11.0.1",
-    "eslint": "^10.2.1",
+    "eslint": "^10.3.0",
     "eslint-plugin-format": "^2.0.1",
     "package-json-type": "^1.1.2",
     "unbuild": "^3.6.1"
