@@ -39,10 +39,10 @@
   },
   "devDependencies": {
     "@adddog/monorepo-consistency": "workspace:*",
-    "@types/node": "^25.7.0",
+    "@types/node": "^25.8.0",
     "@typescript/native-preview": "beta",
     "bumpp": "^11.1.0",
-    "eslint": "^10.3.0",
+    "eslint": "^10.4.0",
     "eslint-plugin-format": "^2.0.1",
     "package-json-type": "^1.1.2",
     "unbuild": "^3.6.1"
